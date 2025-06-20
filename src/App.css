@@ -1,0 +1,41 @@
+.animate-marque {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+.testimonials-swiper {
+  padding: 20px 0px;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+/* hide default swiper button navigation */
+.testimonials-swiper .swiper-slide-next::after,
+.testimonials-swiper .swiper-slide-prev::after {
+  display: none;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  display: none;
+}
+
+.swiper-button-prev-custom.swiper-button-disabled,
+.swiper-button-next-custom.swiper-button-disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.clip-path-slant {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
